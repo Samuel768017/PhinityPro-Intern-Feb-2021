@@ -8,4 +8,15 @@ Started learning the Python Language.
 Yester day facing problem runnig the uvicorn server but atlast after many try we solved the problem and finally the uvicorn server is run and the fastAPI UI is open and also did 
 research about the FastAPI and uvicorn server.
 Installation of MySql database and practice some basic command,how to create a database.
-
+# Date:04-02-2021
+I research about FastAPI and RESTapi.
+Learn and practice some basic MySql commands and create login,user tables.
+The Login table has user_id and password columns and user table has user first,middle and last name,emails,phone,groups,timezone,language,accessing sites,day light saving time.
+Also watch video tutorial about Learning backend RESTapi with Python fastAPI,Learning FastAPI.
+# Date:05-02-2021
+I followed some tutorial to learn how to make connectivity b/w mysql and python FastAPI.
+https://dev.mysql.com/doc/connector-python/en/connector-python-example-connecting.html
+https://dev.to/cuongld2/build-simple-api-service-with-python-fastapi-part-1-581o
+https://realpython.com/python-mysql/
+https://www.w3schools.com/python/python_mysql_getstarted.asp
+Also follow the steps to make connectivity b/w mysql and python.
