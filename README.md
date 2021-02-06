@@ -20,3 +20,6 @@ https://dev.to/cuongld2/build-simple-api-service-with-python-fastapi-part-1-581o
 https://realpython.com/python-mysql/
 https://www.w3schools.com/python/python_mysql_getstarted.asp
 Also follow the steps to make connectivity b/w mysql and python.
+# Date:06-02-2021
+There is presentation session on knowledge sharing.
+I also try to connect mysql db with python.
