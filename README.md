@@ -23,3 +23,10 @@ Also follow the steps to make connectivity b/w mysql and python.
 # Date:06-02-2021
 There is presentation session on knowledge sharing.
 I also try to connect mysql db with python.
+# Date:09-02-2021
+I try to conect mysql with python FastAPI and error is comeout as 'module not named as Sqlalchemy'.
+Also watch video tutorial and i tried but i couldn't solve that.
+# Date:10-02-2021
+create api for login page and try to connect with UI login page.
+
+
