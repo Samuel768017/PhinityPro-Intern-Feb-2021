@@ -31,5 +31,9 @@ environment setup create api for login page .
 
 # Date:11-02-2021
 create api for login page and try to connect with UI login page.
+# Date:12-02-2021
+Documentation must be maintained.
+Services and connectivity with Database connectivity.
+Services provided in API.
 
 
