@@ -27,6 +27,9 @@ I also try to connect mysql db with python.
 I try to conect mysql with python FastAPI and error is comeout as 'module not named as Sqlalchemy'.
 Also watch video tutorial and i tried but i couldn't solve that.
 # Date:10-02-2021
+environment setup create api for login page .
+
+# Date:11-02-2021
 create api for login page and try to connect with UI login page.
 
 
