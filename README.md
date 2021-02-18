@@ -36,4 +36,12 @@ Documentation must be maintained.
 Services and connectivity with Database connectivity.
 Services provided in API.
 
+# Date:13-02-2021
+GitHub Training.
+# Date:17-02-2021
+Create database in workbench.
+connection between mysql and workbench.
+# Date:18-02-2021
+Creating db table in workbench and add data into table.
+Trying to connect FastAPI with MySQL.
 
