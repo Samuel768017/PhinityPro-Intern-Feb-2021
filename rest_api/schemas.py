@@ -1,6 +1,7 @@
 from typing import List, Optional
 
 from pydantic import BaseModel
+# from pydantic.types import StrIntFloat
 
 
 class ItemBase(BaseModel):
@@ -30,6 +31,8 @@ class UserCreate(UserBase):
 
 class User(UserBase):
     id: int
+    firstname:str
+    lastname:str
     is_active: bool
     items: List[Item] = []
 

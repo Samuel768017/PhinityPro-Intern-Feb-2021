@@ -1,13 +1,16 @@
 from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
+from sqlalchemy.sql.expression import column, true
 
 from database import Base
 
 
 class User(Base):
-    __tablename__ = "users"
+    __tablename__ = "users1"
 
     id = Column(Integer, primary_key=True, index=True)
+    firstname= Column(String(255), index = True)
+    lastname= Column(String(255), index = True)
     email = Column(String(255), unique=True, index=True)
     hashed_password = Column(String(255))
     is_active = Column(Boolean, default=True)
