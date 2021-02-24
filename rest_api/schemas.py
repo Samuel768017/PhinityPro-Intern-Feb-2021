@@ -1,40 +1,46 @@
-from typing import List, Optional
 
 from pydantic import BaseModel
-# from pydantic.types import StrIntFloat
-
-
-class ItemBase(BaseModel):
-    title: str
-    description: Optional[str] = None
-
-
-class ItemCreate(ItemBase):
-    pass
-
-
-class Item(ItemBase):
-    id: int
-    owner_id: int
-
-    class Config:
-        orm_mode = True
-
 
 class UserBase(BaseModel):
-    email: str
-
+    id:int
+    firstname: str
+    lastname: str
+    username: str
+    email:str
+    hashed_password: str
 
 class UserCreate(UserBase):
-    password: str
-
+    id :int
+    firstname: str
+    lastname: str
+    username: str
+    email: str
+    hashed_password: str
+     
 
 class User(UserBase):
     id: int
-    firstname:str
-    lastname:str
-    is_active: bool
-    items: List[Item] = []
+    # is_active: bool
+    # items: List[Item] = []
 
     class Config:
         orm_mode = True
+
+# from pydantic.types import StrIntFloat
+
+
+# class ItemBase(BaseModel):
+#     title: str
+#     description: Optional[str] = None
+
+
+# class ItemCreate(ItemBase):
+#     pass
+
+
+# class Item(ItemBase):
+#     id: int
+#     owner_id: int
+
+#     class Config:
+#         orm_mode = True        
