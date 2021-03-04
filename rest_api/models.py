@@ -13,6 +13,7 @@ class User(Base):
     email = Column(String(255), unique=True, index=True)
     username= Column(String(255), index = True)
     password = Column(String(255))
+    status = Column(String(255),index = True)
     # is_active = Column(Boolean, default=True)
 
    
