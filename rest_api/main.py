@@ -1,7 +1,9 @@
 # from collections import UserDict, UserString
+import unittest
 from typing import List, Optional
 from fastapi import Request, Form
 from fastapi import Response
+
 
 from fastapi import Depends, FastAPI, HTTPException,status
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
@@ -59,13 +61,35 @@ async def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     return crud.create_user(db=db, user=user)
 
 @app.post("/users/authenticate/", response_model=schemas.User)
-async def user_login(username:str, password:str, db : Session = Depends(get_db)):
+async def user_login(user: schemas.UserCreate, db: Session = Depends(get_db)):
     print("Authentication called")
-    db_user = crud.get_user_login(db,username = username, password = password)
-    #db_user=crud.user_login(db,username=username,password=password);
+    print(user.username)
+    print(user.password)
+    db_user = crud.get_user_login(db,username = user.username, password = user.password)
     if db_user is None:
-        raise HTTPException(status_code=404, detail="usename or password not correct")
+        raise HTTPException(status_code=404, detail="username and password not found")
     return db_user
+
+# @app.post("/users/authenticate/", response_model=schemas.User)
+# async def user_login(user:schemas.UserBase, db : Session = Depends(get_db)):
+#     print("Authentication called")
+#     #print(user.username)
+#     #print(user.password)
+#     #console.log("Authentication called");
+#     db_user = crud.get_user_login(db,username = user.username, password = user.password)
+#     #db_user=crud.user_login(db,username=username,password=password);
+#     if db_user is None:
+#         raise HTTPException(status_code=404, detail="usename or password not correct")
+#     return db_user
+
+# @app.post("/users/authenticate/", response_model=schemas.User)
+# async def user_login(user:schemas.UserBase, db : Session = Depends(get_db)):
+#     print("Authentication called")
+#     db_user = crud.get_user_login(db,username = username, password = password)
+#     #db_user=crud.user_login(db,username=username,password=password);
+#     if db_user is None:
+#         raise HTTPException(status_code=404, detail="usename or password not correct")
+#     return db_user
 
 @app.get("/users/", response_model=List[schemas.User])
 async def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
