@@ -1,6 +1,5 @@
-# Installation 
--------------------
-
+# Requirements:
+------------------
 # Python 3.6 or above
 https://www.python.org/downloads/
 
@@ -11,12 +10,14 @@ https://dev.mysql.com/downloads/mysql/
 https://code.visualstudio.com/download
 
 ----------------------
-# To know more about FastAPI:
-https://fastapi.tiangolo.com/
 
+# Packages:
 -----------------------
  # FastAPI
   pip install fastapi
+  
+  To know more about FastAPI: https://fastapi.tiangolo.com/
+ 
  # Starlette and Pydantic
  pip install starlette[standard]
  
@@ -25,18 +26,21 @@ https://fastapi.tiangolo.com/
  pip install uvicorn
  
  To know more:https://pypi.org/project/uvicorn/
+ # Python bcrypt 
+ pip install bcrypt
  
+ To know more:https://pypi.org/project/bcrypt/
+ # PyJWT
+ pip install PyJWT
+ 
+ To know more:https://pypi.org/project/PyJWT/
  # For Database(MySQL db Connection)
- pip install mysql
- 
- pip install mysql-connector
- 
  pip install mysql-connectot-python
  
  To know more:https://pypi.org/project/mysql-connector-python/
  
  # SQLAlchemy
- pip install sqlalchemy  
+ pip install SQLAlchemy  
  
  To know more:https://pypi.org/project/SQLAlchemy/
 
