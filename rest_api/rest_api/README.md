@@ -11,7 +11,10 @@ https://dev.mysql.com/downloads/mysql/
 https://code.visualstudio.com/download
 
 ----------------------
+# To know more about FastAPI:
+https://fastapi.tiangolo.com/
 
+-----------------------
  # FastAPI
   pip install fastapi
  # Starlette and Pydantic
@@ -21,6 +24,8 @@ https://code.visualstudio.com/download
  # Uvicorn
  pip install uvicorn
  
+ To know more:https://pypi.org/project/uvicorn/
+ 
  # For Database(MySQL db Connection)
  pip install mysql
  
@@ -28,6 +33,10 @@ https://code.visualstudio.com/download
  
  pip install mysql-connectot-python
  
+ To know more:https://pypi.org/project/mysql-connector-python/
+ 
  # SQLAlchemy
  pip install sqlalchemy  
+ 
+ To know more:https://pypi.org/project/SQLAlchemy/
 
