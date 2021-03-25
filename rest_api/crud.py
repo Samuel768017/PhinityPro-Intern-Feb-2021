@@ -1,5 +1,6 @@
 # from main import db_session_middleware
 from sqlalchemy.orm import Session
+from sqlalchemy.sql.functions import user
 from models import  User 
 import schemas
 
@@ -17,7 +18,17 @@ def get_users(db: Session, skip: int = 0, limit: int = 100):
     return db.query(User).offset(skip).limit(limit).all()
 
 def delete_user_by_id(db: Session, user_id: int):
-    return db.query(User).filter(User.id == user_id).first()
+    user_del= db.query(User).filter(User.id == user_id).first()
+    db.delete(user_del)
+    db.commit()
+
+def update_user(db: Session, user_id: int):
+    user_up= db.query(User).filter(User.id == user_id).first()
+    # user.text = user.text
+    # user.completed = user.completed
+    db.refresh(user_up)
+    db.commit() 
+    return user_up   
 
 
 # def decode_token(token):

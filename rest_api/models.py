@@ -17,4 +17,14 @@ class User(Base):
     status = Column(String(255))
     # is_active = Column(Boolean, default=True)
 
-   
+class Update_User(Base):
+    __tablename__ = "users"
+    
+    id = Column(Integer, primary_key=True)
+    title =Column(String(255))
+    firstname= Column(String(255))
+    lastname= Column(String(255))
+    email = Column(String(255), unique=True)
+    username= Column(String(255))
+    password = Column(String(255))
+    status = Column(String(255))   

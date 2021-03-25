@@ -114,10 +114,14 @@ def get_user_login(username:str, password:str, db : Session = Depends(get_db)):
 
 
 @app.delete("/users/{user_id}", response_model=schemas.User)
-async def delete_user_by_id(user_id: int, db: Session = Depends(get_db)):
+def delete_user(user_id: int, db: Session = Depends(get_db)):
     db_user = crud.delete_user_by_id(db, user_id=user_id)
     return db_user 
 
+@app.put("/users/{user_id}", response_model=schemas.User)
+def update_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.update_user(db, user_id=user_id)
+    return db_user                             
 
 # @app.post("/users/authenticate/", response_model=schemas.User)
 # async def user_login(user: schemas.UserBase, db: Session = Depends(get_db)):
