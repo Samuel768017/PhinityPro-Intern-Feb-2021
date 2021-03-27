@@ -1,0 +1,11 @@
+{
+    "activestate.promptRuntimeCreation": false,
+    "python.linting.mypyEnabled": false,
+    "python.linting.enabled": true,
+    "cSpell.words": [
+        "mysqlconnector",
+        "pydantic",
+        "uvicorn"
+    ],
+    "python.linting.pylintEnabled": true
+}
