@@ -6,4 +6,11 @@ bcrypt==3.2.0
 pytest==6.2.2 
 pyjwt==2.0.1 
 virtualenv==20.4.3 
-
+certifi==2020.12.5
+chardet==4.0.0
+idna==2.10
+pip==21.0.1
+requests==2.25.1
+setuptools==53.0.0
+urllib3==1.26.4
+wheel==0.36.2
