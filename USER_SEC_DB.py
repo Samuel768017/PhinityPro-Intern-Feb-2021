@@ -1,4 +1,4 @@
-from dns.rdatatype import NULL
+#from dns.rdatatype import NULL
 import mysql.connector
 db_connection = mysql.connector.connect(
   host="localhost",
