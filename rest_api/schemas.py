@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 
 class UserBase(BaseModel):
-    title:str
+    title:Optional[str] = None
     firstname: str
     lastname: str
     username: str
@@ -12,7 +12,7 @@ class UserBase(BaseModel):
     status: Optional[str] = None
 
 class UserCreate(UserBase):
-    title:str
+    title:Optional[str] = None
     firstname: str
     lastname: str
     username: str
