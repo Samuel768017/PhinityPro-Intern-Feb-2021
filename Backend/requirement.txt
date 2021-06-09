@@ -1,0 +1,9 @@
+fastapi==0.63.0 
+uvicorn==0.13.4 
+sqlalchemy==1.4.2 
+mysql-connector-python==8.0.23 
+bcrypt==3.2.0 
+pytest==6.2.2 
+pyjwt==2.0.1 
+virtualenv==20.4.3 
+
